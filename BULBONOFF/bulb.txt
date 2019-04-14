@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>BULBONOFF</title>
+	<style>
+		button
+		{
+			padding:10px;
+            margin:140px 330px;
+            background-color:Tomato;
+            color:black;
+		}
+	</style>
+</head>
+<script>
+		function f1(value)
+		{
+			if(value==1)
+				pic="off.jpg";
+			if(value==0)
+				pic="on.jpg";
+			document.getElementById("image").src=pic;
+		}
+	</script>
+	<body bgcolor="black">
+		<center><img src="off.jpg" id="image"></center>
+		<button onclick="f1(0)">TURN ON</button>
+		<button onclick="f1(1)">TURN OFF</button>
+	</body>
+	
+</html>
